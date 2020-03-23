@@ -4,6 +4,8 @@
     <Hero />
     <h2 class="headline">Latest News</h2>
     <LatestNews />
+    <h2 class="headline">Ecosystem Projects</h2>
+    <Projects />
     <Socials />
     <Footer />
   </div>
@@ -12,11 +14,12 @@
 <script>
 import Hero from '../components/Hero'
 import LatestNews from '../components/LatestNews'
+import Projects from '../components/Projects'
 import Socials from '../components/Socials'
 import Navigation from '~/components/Navigation.vue'
 import Footer from '~/components/Footer.vue'
 export default {
-  components: { Navigation, Hero, LatestNews, Socials, Footer },
+  components: { Navigation, LatestNews, Projects,  Hero, Projects, Socials, Footer },
   data() {
     return {
       url: `${process.env.shopUrl}/en?refLink=${process.env.refAddress}`

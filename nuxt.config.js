@@ -79,6 +79,9 @@ module.exports = {
   */
   axios: {
   },
+  env: {
+    projectsUrl: process.env.PROJECTS_URL || 'http://localhost:5000/projects'
+  },
   /*
   ** Build configuration
   */
