@@ -11,6 +11,7 @@
         <no-ssr>
           <iota-payment class="iota-pay"><i18n path="donations.button_text"></i18n></iota-payment>
         </no-ssr>
+        <p><i18n path="donations.disclaimer"></i18n></p>
         <br />
         <br />
         <h2>Leaderboard</h2>
