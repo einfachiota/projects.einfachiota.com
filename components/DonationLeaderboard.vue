@@ -30,20 +30,14 @@ export default {
     };
   },
   methods: {
-    fetchData() {
+    async fetchData() {
       let self = this;
       console.log("url", this.url)
-      fetch(this.url)
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(payments) {
-          console.log("payments", payments)
-          if (payments) {
-            self.payments = payments;
-            self.loading = false;
-          }
-        });
+      let response = await this.$axios.get(this.url)
+      console.log("luch", response)
+      this.payments = response.data
+      this.loading = false;
+   
     },
     tableRowClassName({ row }) {
       if (row.available) {
@@ -68,18 +62,9 @@ export default {
       return array.reverse();
     }
   },
-  mounted() {
+  created() {
     this.loading = true;
     this.fetchData();
-    this.intervalid1 = setInterval(
-      function() {
-        this.fetchData();
-      }.bind(this),
-      10000
-    );
-  },
-  beforeDestroy () {
-    clearInterval(this.intervalid1)
   }
 };
 </script>

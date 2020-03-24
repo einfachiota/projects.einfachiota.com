@@ -8,7 +8,9 @@
         <h2><i18n path="donations.subtitle"></i18n></h2>
         <p><i18n path="donations.description"></i18n></p>
         <br />
-        <iota-payment class="iota-pay"><i18n path="donations.button_text"></i18n></iota-payment>
+        <no-ssr>
+          <iota-payment class="iota-pay"><i18n path="donations.button_text"></i18n></iota-payment>
+        </no-ssr>
         <br />
         <br />
         <h2>Leaderboard</h2>

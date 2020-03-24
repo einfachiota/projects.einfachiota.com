@@ -22,7 +22,7 @@
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.6.1",
-    "vue-scrollto": "^2.17.1"
+    "vue-iota-payment": "0.0.31"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",

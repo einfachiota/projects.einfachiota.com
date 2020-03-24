@@ -30,7 +30,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    { src:'@/plugins/iota-payment', ssr:  true },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -45,7 +46,6 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    'vue-scrollto/nuxt',
     'nuxt-i18n'
 
   ],
