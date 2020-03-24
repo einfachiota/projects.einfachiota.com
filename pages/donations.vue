@@ -1,5 +1,6 @@
 <template>
   <div class="donations">
+    <Navigation />
     <div class="content">
       <div class="container">
         <h1 class="heading"><i18n path="donations.title"></i18n></h1>
@@ -19,8 +20,10 @@
 
 <script>
 import DonationLeaderboard from "../components/DonationLeaderboard";
+import Navigation from '~/components/Navigation.vue'
+
 export default {
-  components: { DonationLeaderboard },
+  components: { Navigation, DonationLeaderboard },
   data() {
     return {
       navOpen: false
@@ -35,7 +38,7 @@ a {
   color: var(--primary);
 }
 .donations {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .iota-pay {
   margin-top: 20px;
