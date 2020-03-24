@@ -9,6 +9,29 @@
         <p>{{ $t('ei_mission') }}</p>
       </div>
       <div class="footer-main">
+        <h4>Projects</h4>
+        <div class="divider"></div>
+        <!--<a href="https://magazin.einfachiota.de" target="_blank" class="footer-main-link">Magazin</a>-->
+        <a
+          href="https://blog.einfachiota.de/"
+          target="_blank"
+          class="footer-main-link"
+        >
+          Home</a
+        >
+        <a
+          href="https://shop.einfachiota.de/"
+          target="_blank"
+          class="footer-main-link"
+          >Discover</a
+        >
+        <nuxt-link
+          to="donations"
+          class="footer-main-link"
+          >Donate</nuxt-link
+        >
+      </div>
+      <div class="footer-main">
         <h4>{{ $t('footer.title') }}</h4>
         <div class="divider"></div>
         <!--<a href="https://magazin.einfachiota.de" target="_blank" class="footer-main-link">Magazin</a>-->
