@@ -12,12 +12,11 @@
         <h4>Projects</h4>
         <div class="divider"></div>
         <!--<a href="https://magazin.einfachiota.de" target="_blank" class="footer-main-link">Magazin</a>-->
-        <a
-          href="https://blog.einfachiota.de/"
-          target="_blank"
+        <nuxt-link
+          to="/"
           class="footer-main-link"
         >
-          Home</a
+          Home</nuxt-link
         >
         <a
           href="https://shop.einfachiota.de/"
