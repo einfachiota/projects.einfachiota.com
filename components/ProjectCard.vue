@@ -29,11 +29,14 @@ export default {
 <style lang="scss" scoped>
 .card {
   height: auto;
-  width: 100%;
-  margin: 0 25px 50px;
+  min-height: 480px;
+  margin: 20px 20px;
   border-radius: 10px;
   overflow: hidden;
   padding-bottom: 30px;
+  width: 25%;
+  background-color: var(--gray);
+  padding: 15px;
   .image-wrapper {
     height: 180px;
     width: 100%;

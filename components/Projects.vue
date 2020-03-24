@@ -18,8 +18,7 @@ export default {
     }
   },
   async created() {
-    this.projects = await this.$axios.$get(process.env.projectsUrl)
-    console.log("this.projects", this.projects)
+      this.projects = await this.$axios.$get(process.env.projectsUrl)
     }
 }
 </script>
@@ -28,12 +27,14 @@ export default {
 .projects {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
-  margin: 30px;
+  margin: 30px auto;
   margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1080px;
 }
 @media only screen and (max-width: 920px) {
-  .latest-news {
+  .projects {
     flex-wrap: wrap;
   }
 }

@@ -84,6 +84,7 @@ export default {
 }
 .headline {
   margin: 30px;
-  margin-top: 50px;
+  margin-top: 100px;
+  text-align: center;
 }
 </style>
