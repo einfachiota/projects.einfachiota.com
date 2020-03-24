@@ -18,7 +18,7 @@ export default {
     }
   },
   async created() {
-      this.projects = await this.$axios.$get(process.env.projectsUrl)
+      this.projects = await this.$axios.$get(process.env.projectsUrl + '/projects')
     }
 }
 </script>

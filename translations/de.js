@@ -89,5 +89,6 @@ module.exports = {
     what_data_link: 'Datenschutzerklärungs Seite.'
   },
   imprint: require('./modules/imprint_de'),
-  privacy: require('./modules/privacy_de')
+  privacy: require('./modules/privacy_de'),
+  donations: require('./modules/donations/de')
 }
